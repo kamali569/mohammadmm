@@ -10,34 +10,63 @@
       background-color: #f2f2f2;
       padding: 20px;
     }
+    h1, h2 {
+      text-align: center;
+      color: #222;
+    }
     .card {
       background-color: white;
       border-radius: 10px;
       padding: 15px;
-      margin-bottom: 25px;
+      margin: 20px auto;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
     }
     .card img {
       width: 100%;
       border-radius: 8px;
-    }
-    .card h2 {
-      margin-top: 10px;
+      cursor: pointer;
     }
     .card p {
-      line-height: 1.8;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 12px 0;
     }
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
+      margin: 8px 6px;
+      padding: 10px 18px;
       background-color: #ff5722;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 14px;
     }
     .btn:hover {
       background-color: #e64a19;
+    }
+    .spongelist {
+      margin-top: 40px;
+      padding: 15px;
+      background: #fffbe6;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .spongelist a {
+      color: #0277bd;
+      text-decoration: none;
+    }
+    .spongelist a:hover {
+      text-decoration: underline;
+    }
+    .spongelist li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+      text-align: justify;
     }
   </style>
 </head>
@@ -45,25 +74,65 @@
 
   <h1>فیلم‌های پیشنهادی برای تماشا</h1>
 
+  <!-- کارت ۱: بتمن علیه جوکر -->
   <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/fa/thumb/e/e7/Batman_v_Superman_poster.jpg/330px-Batman_v_Superman_poster.jpg" alt="بتمن علیه جوکر">
+    <a href="https://www.aparat.com/v/l40x5ve" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Batman_The_Dark_Knight_Returns.jpg" alt="بتمن علیه جوکر">
+    </a>
     <h2>بتمن علیه جوکر</h2>
-    <p>در این فیلم، بتمن در تلاش است جلوی هرج و مرج‌هایی که جوکر در شهر گاتهام ایجاد کرده را بگیرد. داستان با صحنه‌های اکشن جذاب و فلسفه عمیق عدالت دنبال می‌شود. بازی‌های قوی و موسیقی پرتنش از ویژگی‌های بارز این فیلم است. تماشای این فیلم تجربه‌ای فراموش‌نشدنی خواهد بود.</p>
-    <a class="btn" href="https://www.aparat.com/v/xyz" target="_blank">تماشا در آپارات</a>
+    <p>
+      نبرد نفس‌گیر و تیره بین بتمن و جوکر در دل شهر گاتهام. جوکر با ناهنجاری‌های روانی‌اش شهر را به هرج و مرج کشانده و بتمن باید میان عدالت و انصاف تصمیم بگیرد. صحنه‌های اکشن پرتنش، فضاسازی تاریک و اجرای درخشان هیت لجر این فیلم را به یکی از ماندگارترین آثار ابرقهرمانی تبدیل کرده است.
+    </p>
+    <a class="btn" href="https://www.aparat.com/v/l40x5ve" target="_blank">تماشای ویدیو در آپارات</a>
+    <a class="btn" href="https://www.google.com/search?tbm=isch&q=Batman+vs+Joker" target="_blank">مشاهده تصاویر</a>
   </div>
 
+  <!-- کارت ۲: الکتریک استیت -->
   <div class="card">
-    <img src="https://m.media-amazon.com/images/M/MV5BZDg3NmE4OTct.jpg" alt="الکتریک استیت">
+    <a href="https://www.aparat.com/v/zfj697s" target="_blank">
+      <img src="https://m.media-amazon.com/images/M/MV5BNmFlZTVlMmYtZDgzZC00ZTYwLWFjNzMtNDgyNGUwY2RkYjk5XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_.jpg" alt="الکتریک استیت">
+    </a>
     <h2>الکتریک استیت</h2>
-    <p>در آینده‌ای پسا-آخرالزمانی، یک دختر نوجوان و ربات وفادارش به دنبال برادر گمشده‌اش سفر می‌کنند. دنیایی پر از رازهای تکنولوژیک، حس عمیق تنهایی، و پیوندهای انسانی در این فیلم گنجانده شده است. با جلوه‌های ویژه قوی و روایتی احساسی، الکتریک استیت تماشاگر را مجذوب می‌کند.</p>
-    <a class="btn" href="https://www.aparat.com/v/abc" target="_blank">تماشا در آپارات</a>
+    <p>
+      در آینده‌ای پسا-آخرالزمانی، یک دختر نوجوان و ربات همراه او در جهانی متروکه پر از تهدیدات سایبری به دنبال خانواده‌ی گمشده‌اش می‌گردند. تلفیقی از جلوه‌های بصری خیره‌کننده و عمق احساسی در روایت، این فیلم را به تجربه‌ای متفاوت و درگیرکننده برای همه سنین تبدیل کرده است.
+    </p>
+    <a class="btn" href="https://www.aparat.com/v/zfj697s" target="_blank">تماشای ویدیو در آپارات</a>
+    <a class="btn" href="https://www.google.com/search?tbm=isch&q=The+Electric+State" target="_blank">مشاهده تصاویر</a>
   </div>
 
+  <!-- کارت ۳: پلانکتون -->
   <div class="card">
-    <img src="https://i.ytimg.com/vi/xyz/maxresdefault.jpg" alt="پلانکتون: فیلم">
+    <a href="https://www.aparat.com/v/pnvxn95" target="_blank">
+      <img src="https://i.ytimg.com/vi/HFiZZQurEtw/maxresdefault.jpg" alt="پلانکتون: فیلم">
+    </a>
     <h2>پلانکتون: فیلم</h2>
-    <p>شخصیت شرور اما خنده‌دار پلانکتون در فیلمی مستقل به ماجراجویی‌ای عجیب کشیده می‌شود. او به دنبال فرمول سری کرابی پتی است، اما مسیرش پر از لحظات بامزه و درگیری‌های عجیب است. این فیلم بیشتر به کودکان و نوجوانان توصیه می‌شود اما بزرگترها هم لذت خواهند برد.</p>
-    <a class="btn" href="https://www.aparat.com/v/123" target="_blank">تماشا در آپارات</a>
+    <p>
+      پلانکتون همیشه در تلاش برای دزدیدن فرمول مخفی کرابی پتی است. در این انیمیشن پر از لحظات خنده‌دار و ماجراهای شگفت‌انگیز، او ما را به سفری رنگارنگ و هیجان‌انگیز می‌برد. مناسب برای تمام سنین و سرشار از پیام‌های مثبت درباره دوستی و پشتکار.
+    </p>
+    <a class="btn" href="https://www.aparat.com/v/pnvxn95" target="_blank">تماشای ویدیو در آپارات</a>
+    <a class="btn" href="https://www.google.com/search?tbm=isch&q=Plankton+The+Movie" target="_blank">مشاهده تصاویر</a>
+  </div>
+
+  <!-- بخش باب‌اسفنجی -->
+  <div class="spongelist">
+    <h2>مجموعه فیلم باحال باب‌اسفنجی</h2>
+    <ul>
+      <li>
+        <strong><a href="https://www.aparat.com/v/hkj612x" target="_blank">The SpongeBob SquarePants Movie (2004)</a></strong><br>
+        ماجرای اولین سفر بزرگ باب‌اسفنجی و دوست وفادارش پاتریک برای نجات پادشاهی بیکینی باتم از دست پلن پلنکتون. طنز کودکانه و موسیقی شاد، این فیلم را به خاطره‌ای ماندگار برای همه تبدیل کرده است. :contentReference[oaicite:0]{index=0}
+        <br><a class="btn" href="https://www.google.com/search?tbm=isch&q=SpongeBob+SquarePants+Movie+2004" target="_blank">مشاهده تصاویر</a>
+      </li>
+      <li>
+        <strong><a href="https://www.aparat.com/v/ljqo417" target="_blank">The SpongeBob Movie: Sponge Out of Water (2015)</a></strong><br>
+        باب‌اسفنجی و دوستانش برای نجات فرمول سری کرابی پتی به دنیای واقعی سفر می‌کنند. ترکیب انیمیشن و صحنه‌های واقعی با شوخی‌های بزرگسالانه، این فیلم را به تجربه‌ای فراموش‌نشدنی تبدیل کرده است. :contentReference[oaicite:1]{index=1}
+        <br><a class="btn" href="https://www.google.com/search?tbm=isch&q=SpongeBob+Sponge+Out+of+Water" target="_blank">مشاهده تصاویر</a>
+      </li>
+      <li>
+        <strong><a href="https://www.aparat.com/v/q21pia7" target="_blank">The SpongeBob Movie: Sponge on the Run (2020)</a></strong><br>
+        سفری حماسی باب‌اسفنجی و پاتریک برای نجات حیوان خانگی‌شان «گری» از چنگال پوزیدون. طراحی سه‌بعدی رنگارنگ و داستانی پر از ماجراجویی این نسخه را به اوج فرنچایز رسانده است. :contentReference[oaicite:2]{index=2}
+        <br><a class="btn" href="https://www.google.com/search?tbm=isch&q=SpongeBob+Sponge+on+the+Run" target="_blank">مشاهده تصاویر</a>
+      </li>
+    </ul>
   </div>
 
 </body>

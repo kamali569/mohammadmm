@@ -1,0 +1,34 @@
+# .htaccess
+# Enable HTTP/2 Server Push (if supported) and compression
+<IfModule mod_http2.h2>
+  ProtocolsHonorOrder On
+  Protocols h2 h2c http/1.1
+</IfModule>
+
+<IfModule mod_deflate.c>
+  # Compress text, html, javascript, css, xml:
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache-Control headers for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# Force HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Redirect to HTTP/2 push manifest (optional)
+Header set Link "</styles.css>; rel=preload; as=style"
+
+# Prevent directory browsing
+Options -Indexes
